@@ -8,4 +8,5 @@
 .idea/
 app/var/
 app/vendor/
+mysql/
 ###< symfony/framework-bundle ###
