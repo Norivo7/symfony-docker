@@ -7,7 +7,7 @@ services:
     ports:
       - '9000:9000'
     volumes:
-      - ./app:/var/www/your-project
+      - ./app:/var/www/symfony-docker
     depends_on:
       - db
   
@@ -42,7 +42,7 @@ services:
       - NGINX_HOST=your-project.symfony
       - NGINX_PORT=80
     volumes:
-      - ./app:/var/www/your-project
+      - ./app:/var/www/symfony-docker
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
     depends_on:
       - php
@@ -54,7 +54,7 @@ services:
     links:
       - db
     environment:
-      PMA_HOST: project_database
+      PMA_HOST: db
       PMA_USER: dev
       PMA_PASSWORD: dev
       PMA_PORT: 3306
