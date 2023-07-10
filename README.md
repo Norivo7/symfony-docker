@@ -1,4 +1,6 @@
 # symfony-docker
+
+Fork from https://github.com/dunglas/symfony-docker/, but without the fancy https stuff, for simpler applications.
 A minimal Symfony project for creating applications from scratch.
 Contains:
 php + mysql + phpmyadmin + nginx.
