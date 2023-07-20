@@ -38,5 +38,5 @@ sites:
 - your-project.symfony:8081 -> phpmyadmin
 
 If you work on linux and cannot edit some of the project files right after the first installation, you can run 
-```docker compose run --rm php chown -R $(id -u):$(id -g) .``
+```docker compose run --rm php chown -R $(id -u):$(id -g) .```
  to set yourself as owner of the project files that were created by the docker container.
