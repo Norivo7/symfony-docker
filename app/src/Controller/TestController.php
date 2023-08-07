@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class TestController extends AbstractController
@@ -15,5 +16,13 @@ class TestController extends AbstractController
             'message' => 'Welcome to your new controller!',
             'path' => 'src/Controller/TestController.php',
         ]);
+    }
+
+    #[Route('/', name: 'home')]
+    public function home(): Response
+    {
+        $test = "cos";
+        $test = $test . 'cos 2';
+        return $this->render('base.html.twig');
     }
 }
